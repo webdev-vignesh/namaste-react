@@ -26,6 +26,31 @@ Tree shaking is a technique that is used for optimizing our code performance by 
 ### 7. What is Hot Module Replacement?
 Hot Module Replacement (HMR) adds or removes modules while an application is running, without a full reload. This helps to retain its state values, and saves valuable development time by only updating what has changed.
 
-### 8. List down your favourite 5 superpowers of parcel and describe any 3 of them in your own code?
-1.) Parcel is a module bundler which bundles all our files and creates a development build.
-2.) 
+### 8. List down your favourite 5 superpowers of parcel and describe any 3 of them in your own words?
+Superpowers of parcel:
+1.) Module bundling : Parcel is a module bundler which bundles all our files and creates a development build.
+2.) Hot Module Replacement(HMR) : It adds/ removes modules based on our changes while application is running, without a full reload.
+3.) Application hosting : It creates a server and host our application in that server for development build.
+4.) Caching
+5.) Code splitting
+
+### 9. What is '.gitignore'? What should we add and not add into it?
+'.gitignore' is a file in our project that will be used to ignore the upload of unneccessary files to our github cloud repository.
+We should not add our source files, images, package.json, package-lock.json files into it.
+We should add our .env, node_modules, .parcel-cache, dist file into it.
+
+### 10. What is the difference between 'package.json' and 'package-lock.json'?
+'package.json' is used to give us basic details about the project and the list of dependices used to run the project.
+'package-lock.json' is used to track the entire tree of dependencies(icluding dependencies of dependencies) and the exact version of each dependencies.
+
+### 11. Why should I not modify 'package-lock.json'?
+You should not modify 'package-lock.json' since it keeps track of entire tree of dependencies, modifying it may break our application.
+
+### 12. What is 'node_modules'? Is it good idea to push that on git?
+'node_modules' is the folder that consists of all the dependency packages required for our project. With the help of 'package.json' and 'package-lock.json' we can recreate the 'node_modules' to our project whenever needed, also the overall size of 'node_modules' folder will be huge so it is not a good idea to push that on git.
+
+### 13. What is the 'dist' folder?
+The dist folder consists of the minified version of our source files which will be interpreted by the server to host our application.
+
+### 14. What is 'browserlists'?
+Browserlists is a tool that is used to declare which browsers and specific versions can run our frontend applications while not providing support for others.
